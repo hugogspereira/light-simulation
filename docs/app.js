@@ -23,7 +23,7 @@ let program;
 let aspectCanvas;
 let mView;
 
-const objects_template = ['Sphere','Cube','Pyramid','Cylinder','Torus'];
+const objects_template = ['Torus','Cube','Pyramid','Cylinder','Sphere'];
 const ambientColor = vec4(0.2, 0.2, 0.2, 1.0);
 
 let time = 1;
@@ -81,7 +81,7 @@ function setup(shaders) {
         Kd: [0,100,0],
         Ks: [255,255,255],
         shininess: 50,
-        objectsOption: 'Sphere'
+        objectsOption: 'Torus'
     }
 
 
