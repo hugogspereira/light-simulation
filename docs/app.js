@@ -382,5 +382,7 @@ function setup(shaders) {
     window.requestAnimationFrame(render);
 }
 
-const shaderUrls = ['shader.vert', 'shader.frag'];
-loadShadersFromURLS(shaderUrls).then(shaders => setup(shaders));
+{
+    const shaderUrls = ['shader.vert', 'shader.frag'];
+    loadShadersFromURLS(shaderUrls).then(s => setup(s));
+}
